@@ -2,7 +2,7 @@
 
 This folder contains Jupyter notebooks demonstrating the usage and exploration of the data preprocessing module.
 
-## : task_1e_eda.py
+## : task_1_data_understanding_eda.py
 
 - Loading and inspecting the dataset
 
