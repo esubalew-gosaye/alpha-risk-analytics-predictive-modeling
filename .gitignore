@@ -1,5 +1,6 @@
 venv
-data
+# data*
+data/processed/*
 __pycache__*
 src\utils\__pycache__*
 .pytest_cache
