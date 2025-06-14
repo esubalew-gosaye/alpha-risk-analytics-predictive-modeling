@@ -1,1 +1,7 @@
 venv
+data
+__pycache__*
+src\utils\__pycache__*
+.pytest_cache
+src/utils/__pycache__/clean_data.cpython-313.pyc
+src/utils/__pycache__/data_loader.cpython-313.pyc
