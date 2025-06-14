@@ -8,6 +8,7 @@ This project performs exploratory data analysis (EDA) and statistical investigat
 ---
 ```
 KAIM-WEEK-3/
+├── .dvc/ # DVC Metadata
 ├── .github/
 │ └── workflows/ # GitHub Actions workflows
 ├── data/
@@ -30,10 +31,13 @@ KAIM-WEEK-3/
 ├── README.md # Main project documentation
 └── requirements.txt # Python dependencies
 ```
+
+---
+
 ## Tech Stack
 
 **Languages & Libraries:**  
-Python, Pandas, SpaCy, Scikit-learn, Hugging Face Transformers, Matplotlib, Seaborn
+Python, Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, Hugging Face, SpaCy
 
 **Version Control:**  
 Git, GitHub
@@ -41,8 +45,49 @@ Git, GitHub
 **Visualization:**  
 Matplotlib, Seaborn, WordCloud
 
+**Data Management:**  
+[DVC (Data Version Control)](https://dvc.org/) for dataset versioning and reproducibility
+
 ---
 
+## Reproducible Data Pipeline with DVC
+
+To ensure full reproducibility and auditability — especially critical in financial and insurance sectors — this project integrates **DVC** to version and track datasets.
+
+### DVC Highlights
+
+- Track large datasets without bloating Git
+- Version control for `.csv`, `.parquet`, or any binary files
+- Local or cloud storage support
+- Seamless integration with Git for team collaboration
+
+### Basic Usage
+
+```bash
+# Initialize DVC (already done in this repo)
+dvc init
+
+# Add data to DVC
+dvc add data/raw/data.csv
+
+# Set up remote storage 
+dvc remote add -d localremote /path/to/storage
+
+# Push data to remote
+dvc push
+
+# Commit metadata to Git
+git add data/raw/claims_data.csv.dvc .gitignore
+git commit -m "feat: track dataset with DVC"
+```
+To reproduce the same data version later:
+
+```bash
+
+git pull
+dvc pull
+```
+---
 ## Setup Instructions
 
 ### 1. Clone the Repository
