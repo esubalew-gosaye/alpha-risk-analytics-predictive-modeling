@@ -1,4 +1,6 @@
 [core]
-    remote = localstorage
+    remote = localremote
 ['remote "localstorage"']
     url = D:\projects\TenAcademy\week3\dvc-localstorage
+['remote "localremote"']
+    url = D:/projects/TenAcademy/week3/dvc-localstorage2
