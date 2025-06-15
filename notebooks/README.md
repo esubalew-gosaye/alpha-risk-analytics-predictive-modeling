@@ -24,6 +24,19 @@ This folder contains Jupyter notebooks demonstrating the usage and exploration o
 
 - Loss ratio analysis and trends across geography and time
 
+## : task_2_dvc.py
+
+- Initalizes dvc
+
+- creates localstorage | localremote
+
+- adds files to dvc
+
+- tracks files
+
+- pushes file to localremote
+ 
+
 
 ## Running Notebooks
 
