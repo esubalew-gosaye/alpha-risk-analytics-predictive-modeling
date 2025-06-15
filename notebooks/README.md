@@ -36,6 +36,23 @@ This folder contains Jupyter notebooks demonstrating the usage and exploration o
 
 - pushes file to localremote
  
+## : task3_hypothesis_testing.py
+
+- Computes claim frequency and severity
+
+- Defines and executes A/B hypothesis tests
+
+- Tests risk differences across provinces using ANOVA
+
+- Tests claim severity differences across postal codes
+
+- Tests margin (profit) difference across postal codes using t-test
+
+- Tests risk difference between genders using chi-squared test
+
+- Provides statistical decision (reject/fail to reject H₀)
+
+- Adds business interpretation for each test result
 
 
 ## Running Notebooks
