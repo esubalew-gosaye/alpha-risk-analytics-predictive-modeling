@@ -54,6 +54,20 @@ This folder contains Jupyter notebooks demonstrating the usage and exploration o
 
 - Adds business interpretation for each test result
 
+## : task4_ml.py
+
+- Prepares and processes the data
+
+- Encodes categorical and numerical features
+
+- Builds and evaluates models for claim severity prediction
+
+- Analyzes model performance
+
+- Identifies important features using SHAP
+
+- Builds and evaluates models for claim frequency prediction
+
 
 ## Running Notebooks
 
